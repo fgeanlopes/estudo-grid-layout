@@ -1,0 +1,38 @@
+body{
+    background-color: #282727;
+}
+
+/* GRID TEMPLATE  */
+.box_grid{
+    display: grid;
+    /********** // GRID TEMPLATE COLUMNS // ***********/
+    /* TAMANHO FIXO */
+    /* grid-template-columns: 100px 200px; */
+    
+    /* TAMANHO IGUAL PARA AS COLUNAS */
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    
+    /* TAMANHO MINIMO PARA COLUNA.     */
+    /* grid-template-columns: 1fr 1fr minmax(1vw, 2fr) ; */
+    
+    /* REPETICAO COLUNA, TAMANHO FIXO IGUAL PARA TODAS */
+    /* grid-template-columns: repeat(3, 1fr); */
+    grid-template-columns: repeat(1, 1fr);
+
+    /* CRIA COLUNAS "INFINITAS" QUE ACOMODE ITENS COM TAMANHO MINIMO */
+    /* grid-template-columns: repeat(auto-fit, minmax(500px, auto)); */
+
+
+    /********** // GRID TEMPLATE ROWS // ***********/
+    /* DEFINIE O TAMANO DAS LINHAS */
+    /* PRIMEIRA PROP É TAMANHO MINIMO, AUTO É PARA AS LINHAS RESTANTE */
+    grid-template-rows: 500px auto;
+
+    /* TAMANHO ENTRE OS ITENS */
+    grid-gap: 50px;
+}
+
+.item{
+    background-color: #0c9e38;
+    padding:10px;
+}
